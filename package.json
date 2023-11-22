@@ -1,0 +1,24 @@
+{
+  "name": "@p_nsk/result-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/result.js",
+  "type": "module",
+  "types": "./dist/result.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "P_nutsK",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p_nutsk/result-ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.4",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0"
+  }
+}
