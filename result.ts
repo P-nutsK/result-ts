@@ -1,6 +1,3 @@
-import * as fsp from "node:fs/promises"
-
-/* eslint-disable no-empty */
 export class Ok<T> {
 	error = null;
 	value: T;
@@ -39,9 +36,10 @@ export type Result<T, U> = Ok<T> | Err<U>;
  * @param func result型として使用したい関数
  * ```ts
  * const resultedFetch = resultify(fetch);
- * const { error,value:response } = await resultedFetch("//example.com")
+ * const { error,value:response } = await resultedFetch("https://example.com/")
  * ```
  */
+// any許容しないと無理な場合もあります。
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function resultify<T extends (...args: any[]) => Promise<any>>(
 	func: T
@@ -55,5 +53,3 @@ export function resultify<T extends (...args: any[]) => Promise<any>>(
 		}
 	};
 }
-const read = resultify(fsp.readFile);
-(await read("/")).unwrap()

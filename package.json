@@ -1,7 +1,7 @@
 {
   "name": "@p_nsk/result-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "便利なResult型を提供します。",
   "main": "./dist/result.js",
   "type": "module",
   "types": "./dist/result.d.ts",
@@ -9,12 +9,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "P_nutsK",
+  "author": {
+    "name": "P_nutsK",
+    "email": "Pinutsky@gmail.com",
+    "url": "https://p-nsk.com"
+  },
+  "files": [
+    "result.ts",
+    "./dist"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/p_nutsk/result-ts"
+    "url": "git+https://github.com/p-nutsk/result-ts.git"
   },
+  "bugs": "https://github.com/p-nutsk/result-ts/issues",
   "devDependencies": {
     "@types/node": "^20.9.4",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
